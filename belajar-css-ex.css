@@ -1,0 +1,14 @@
+body {
+    background-color: powderblue;
+  }
+  h1 {
+    color: blue;
+    font-family:arial;
+    font-size: 150%;
+  }
+  p {
+    color: red;
+    border: 2px solid violet;
+    padding: 10px;
+    margin: 40px
+  }
