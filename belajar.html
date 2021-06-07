@@ -2,8 +2,32 @@
 <html>
 <head>
 <title> belajar </title>
+<style>
+  a:link{
+    color:darkgreen;
+    background-color: transparent; 
+    text-decoration: none;
+  }
+  a:visited{
+    color: red;
+    background-color:transparent ;
+    text-decoration: none;
+  }
+  a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+
+  }
+  a:active{
+    color:yellow;
+    text-decoration: underline;
+  }
+</style>
 </head>
 <body style="background-color: aquamarine;">
+<p>
+  <a href="#fa1"><button> Loncat ke HTML Links  </button> </a>
+</p>
 <h1 title="header lebih tepatnya" > judul nih </h1>
 <hr>
 <h2> Judul h2 </h2>
@@ -79,7 +103,7 @@ close to 5 million globally.
 </p>
 <p> (bdo) <bdo dir="rtl">kasur</bdo> Jadi rtl tuh right to left, jadi rusak itu aslinya penulisannya rasur di srcodenya</p> 
 <!-- Alhamdulillah dah sampe HTML Comments -->
-<h1>Oke kali ini kita akan bermain dengan warna</h1> 
+<h2>Oke kali ini kita akan bermain dengan warna</h1> 
   <p style=color:blue; "> Oke jadi warna bisa dibuat dengan menggunakan sebut nama, ex blue <br>
     <p>bisa juga dengan format<br>
     RGB, ex : rgb(...,...,...) <br>
@@ -105,18 +129,68 @@ close to 5 million globally.
   <br> &nbsp; CSS ada : inline, Internal, External
   <pre style="font-family:Geneva;font-size:medium;"> CSS ada : inline, Internal, External</pre>
 </p> 
-<h3>HTML CSS </h3><hr>
+<h2>
+  HTML CSS 
+</h2><hr>
 <pre style="font-family:Geneva;font-size:medium;">
   -Inline, yang kita pake selama ini
   -Internal, bawah head ada "style>" dan diatas body>
   -External, beda source code. Jadi nanti ada syntax pemanggil css nya. Jadi linked gitu entar.
 </pre> 
-
-
-
-
-
-
+<h100 id="fa1"; style="font-size: 24px; font-weight: bolder;">
+  HTML Links
+</h100><hr>
+<p>
+  Link use 'a' syntax and 'href' attribute <br>
+  Contoh link dengan target berbeda: <br>
+  <a href="https://google.com" target="_self">Target _self/default</a><br>
+  <a href="https://google.com" target="_blank">Target _blank</a><br>
+  <a href="https://google.com" target="_parent">Target _parent</a><br>
+  <a href="https://google.com" target="_top">Target _top</a>
+<br><i>Perbedaan diatas gak seberapa keliatan. Perbedaan yang keliatan ketika menggunakan images. Perbedaan yg jelas bisa dilihat di bookmark.</i>
+</p>
+<p>
+  Ada <u>Absolute URLs</u> dan <u>Relative URLs</u><br>
+  Absolute URL : a full web address<br>
+  Relative URL : Local link (a link to a page within the same website) <em>Jadi pemahamanku itu kayak ya udah ada di library sendiri gitu</em><br>
+  Aku tak buat example buatanku sendiri dibawah ini. Untuk example di w3schools bisa diliat disini <a href="https://www.w3schools.com/html/html_links.asp"> HTML Links </a>
+</p>
+<p>
+  <b>Absolute URL</b><br>
+  <a href="https://gm21.link">Situs Nonton favorit</a><br>
+  <b>Relavtive URL</b><br>
+  <!-- Ambil images di folder BELAJAR NGODING/img-->
+  <a href="img/dragon-img_ver_1.jpg">Gambar Naga Lucu</a>
+</p>
+<p>
+  <b>->Link pada Gambar</b><br>
+  <a href="https://www.dota2.com" title="Dota 2"><img src="img/naga-siren.gif"; alt="Naga-Siren Dota 2"; style="width: 100px;height: 100px;"> </a><br>
+  Klik Gambar diatas
+</p>
+<p>
+  <b>->Link kirim email</b><br>
+  <a href="mailto:semongkofa1@gmail.com"> Contact us ! </a>
+</p>
+<p><b>->Button as a Link</b><br>
+  <!-- Javascript -->
+  <button onclick="document.location='https://www.dota2.com'">Play Dota 2</button>
+</p>
+<h3>
+  ~Link Colors
+</h3>
+<p>
+  Pake css internal tak taruh di style atas jadi semua link yg udah tak tulis bakalan berubah warnanya.<br>
+  <em> sek sek misal 1 1 ada link pingin tak buat button pake css juga gimana ya. Aku nyoba dibawah text ini</em><Br>
+   Setelah search ada yg pake btnStack gitu (bootstrap), jadi entar dulu deh. Aku buat di css-internal.html <br>
+  <a href="css internal.html">Langsung buka sini aja kalo mau tau button pake css</a>
+</p>
+<h3>
+  ~Link Bookmarks
+</h3>
+<p>
+  Jadi kayak daftar isi gitu. Dipencet langsung loncat ke lokasi. <br>
+  <i>Aku buat diatas loncat ke HTML Links </i>
+</p>
 
 </body>
 </html>
