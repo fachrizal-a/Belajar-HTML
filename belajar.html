@@ -24,7 +24,7 @@
   }
 </style>
 </head>
-<body style="background-color: aquamarine;">
+<body style="background-color: aquamarine;"></body>
 <p>
   <a href="#fa1"><button> Loncat ke HTML Links  </button> </a>
 </p>
@@ -140,6 +140,9 @@ close to 5 million globally.
 <h100 id="fa1"; style="font-size: 24px; font-weight: bolder;">
   HTML Links
 </h100><hr>
+<h3>
+  -Links
+</h3>
 <p>
   Link use 'a' syntax and 'href' attribute <br>
   Contoh link dengan target berbeda: <br>
@@ -176,7 +179,7 @@ close to 5 million globally.
   <button onclick="document.location='https://www.dota2.com'">Play Dota 2</button>
 </p>
 <h3>
-  ~Link Colors
+  -Link Colors
 </h3>
 <p>
   Pake css internal tak taruh di style atas jadi semua link yg udah tak tulis bakalan berubah warnanya.<br>
@@ -185,12 +188,75 @@ close to 5 million globally.
   <a href="css internal.html">Langsung buka sini aja kalo mau tau button pake css</a>
 </p>
 <h3>
-  ~Link Bookmarks
+  -Link Bookmarks
 </h3>
 <p>
   Jadi kayak daftar isi gitu. Dipencet langsung loncat ke lokasi. <br>
   <i>Aku buat diatas loncat ke HTML Links </i>
 </p>
+<h2>
+  HTML Images<br>
+</h2>
+<h3>
+  -Links
+</h3>
+<p>
+  Syntax 'img' attributes wajib src, alt<br>
+  <i>ngambil images udah pernah jadi gw gk praktekin lagi</i> <br>
+  <b>Perbedaan width dan height tanpa attribute style dan pake</b><br>
+  Bagusan pake style, perbedaan bisa di cek <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_style">DISINI</a><br>
+  <u><b>Image Floating</u></b><br>
+  <n><img src="img/awan.jpg" alt="Awan" style="height: 30px;width: 30px;float: left;">Jadi ya float ngambang. Bisa float left/right kyk gambar dibawah di text ini float kiri</n>
+</p>
+<br>
+<h3>
+  -Image Maps
+</h3>
+<p>
+Jadi apa itu image maps? Image maps itu ya image, cuman img nya bisa dipencet gitu, trus kalo dipencet ngapain.. trserah mau gimana.<br>
+Attribute wajib <b>usemap="#namadipanggil"</b>
+</p>
+<img src="img/palabotak.jpg" alt="botak" usemap="#botak">
+<p>Pencet pala botaknya yg kinclong itu</p>
 
-</body>
+<map name="botak">
+  <area alt="botak" title="Iya ini klik en" href="https://www.halodoc.com/kesehatan/botak" coords="140,57,35" shape="circle">
+</map>
+
+<hr>
+<p>Ini digabung ama Javascript</p>
+<img src="img/palabotak.jpg" alt="botakjs" usemap="#botakjava">
+    <map id="botakjava" name="botakjava">
+      <area onclick="botakjs()" alt="botak" title="Iya ini klik en" href="https://www.halodoc.com/kesehatan/botak" coords="140,57,35" shape="circle">
+    </map>
+    <script>
+      function botakjs(){
+        alert("TUING !!!");
+      }
+    </script>
+<h3>
+  -Background Images
+</h3>
+<p>
+  <div style="background-image: url(img/star\ wikipedia.jpg);">
+    A star is an astronomical object consisting of a luminous spheroid of plasma held together by its own gravity.<br>
+    The nearest star to Earth is the Sun. Many other stars are visible to the naked eye at night, but due to their immense distance from Earth they appear as fixed points of light in the sky. The most prominent stars are grouped into constellations and asterisms, and many of the brightest stars have proper names. Astronomers have assembled star catalogues that identify the known stars and provide standardized stellar designations. The observable universe contains an estimated 1022 to 1024 stars, but most are invisible to the naked eye from Earth, including all individual stars outside our galaxy, the Milky Way.
+  </div>
+  Bisa ditaruh di syn style juga diatas<br>
+</p>
+<h3>
+  -The Picture Element
+</h3>
+<p>
+  Picture element ini bisa berubah gitu pic nya nyesuain size screen lu <br>
+  Langsung ke sini ae agak susah ni <a href="https://www.w3schools.com/html/html_images_picture.asp" style="font-size: large;"> <b>Materi Picture element </b></a>   
+
+</p>
+<h1> Udah segini aja mau langsung praktek okei </h1> 
+<p> 
+  mau tak baca ae langsung tk ketik entar waktu butuh prakteknya, + test nya tk selesain di w3schools <br>
+  nanti kalo ada note pasti ditulis disini atau di tempat lain<br>
+  oiya nanti ada materi js html entah gimana, cuman entar sebisa mungkin kalo memang butuh dicatet aku catet
+</p>
+
 </html>
